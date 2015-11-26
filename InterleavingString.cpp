@@ -4,6 +4,7 @@
 // Version     :
 // Copyright   : copyright
 // Description : Program to check a string is interleaving of other two's
+// How to run  : Run as a normal C++ Code
 //============================================================================
 
 #include <iostream>
@@ -74,17 +75,17 @@ void test(char *A, char *B, char *C) {
 
 // Driver program to test above functions
 int main() {
-	char *A; // = "XXY";
-	char *B; // = "XXZ";
-	char *C; // = "XXZXXXY";
+	char *A;
+	char *B;
+	char *C;
 	A = new char[SIZE];
 	B = new char[SIZE];
 	C = new char[SIZE * 2];
-	cout << "enter A : ";
+	cout << "enter A : "; // "XXY";
 	cin >> A;
-	cout << "enter B : ";
+	cout << "enter B : "; // "XXZ";
 	cin >> B;
-	cout << "enter C : ";
+	cout << "enter C : "; // "XXZXXXY";
 	cin >> C;
 	test(A, B, C);
 	test(B, A, C);
